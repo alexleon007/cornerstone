@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Expense Tracker</title>
+
+    
+    <script src="Chart.js/dist/Chart.min.js"></script>
+    <script src="Chart.js/samples/utils.js"></script>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+
+    <div class="expense-form">
+        <input type="text" id="expense-description" placeholder="Expense Description">
+        <input type="number" id="expense-amount" placeholder="Amount">
+        <input type="date" id="expense-date" class="hidden" placeholder="Date">
+        <button id="create-button">Create</button>
+        <button id="update-button" class="hidden">Update</button>
+    </div>
+
+    <div class="container hidden">
+        <div class="expense-list">
+            <h2>Expense Records</h2>
+            <ul id="records-list">
+            </ul>
+        </div>
+        <div class="chart-list">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
